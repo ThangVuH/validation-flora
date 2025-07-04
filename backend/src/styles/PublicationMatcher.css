@@ -1,0 +1,6 @@
+.publication-matcher .match-group {
+    border: 2px solid #494747; /* Adds a border around each publication */
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px; /* Optional: adds rounded corners */
+  }
