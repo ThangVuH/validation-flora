@@ -1,0 +1,19 @@
+HAL:
+(\"Laue Langevin\" AND docType_s:THESE)
+(\"European Synchrotron\" AND publicationDate_s:2018)
+
+'fq': f'submittedDateY_i:{self.year}'
+
+OpenALex:
+(filter=publication_year:2015,corresponding_institution_ids:i4210113448)
+(filter=publication_year:2015,default.search:Laue+Langevin,authorships.institutions.lineage:!i4210113448)
+(filter=publication_year:2015,default.search:%22ILL+Grenoble%22)
+
+Web of Science:
+https://www.webofscience.com/wos/woscc/summary/328976aa-882a-4102-b30d-5c2db3358ba6-015338e006/relevance/1
+    - (PY=2015) AND ALL=(Institut Laue Langevin)    [from Web of science core]
+https://www.webofscience.com/wos/alldb/summary/34c46c0c-1676-44a7-8a70-200e744cd7c6-0153d5f308/relevance/1
+    - PY=(2015) AND ALL=(Institut Laue Langevin)    [from All database]
+(*)https://www.webofscience.com/wos/woscc/summary/6a9b6862-3142-4ccd-98b3-7ec3f9ef0ded-0153d765e1/relevance/1
+    - (ALL=(2015 Institut Laue Langevin)) OR (PY=(2015) AND OG=(https://ror.org/01xtjs520)) 
+

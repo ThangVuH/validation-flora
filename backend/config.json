@@ -1,0 +1,56 @@
+{
+    "Database": {
+      "URI": "postgresql://postgres:1234@localhost/openalex_ILL_db"
+    },
+    "Flora": {
+        "URL": "https://epn-library.esrf.fr:443/flora/XAPI",
+        "download_folder":"C:\\Users\\vu-hong\\Desktop\\ILL_corpus\\validation-flora\\backend\\fetchers\\Data",
+        "USER" : "vu-hong",
+        "PASSWORD" : "ill03TVH106!",
+        "PUBLICATION_YEAR": 2015,
+        
+        "parameters_query":{
+          "method": "publicaccess.query",
+          "sourceName": "doc",
+          "tableName": "PUB_ILL",
+          "queryMode": "standard",
+          "maxMatches": 10000,
+          "query": "[DILL_YEAR|and|2015]"
+        },
+
+        "parameters_record":{
+          "method": "publicaccess.records",
+          "sourceName": "doc",
+          "tableName": "PUB_ILL"
+        }
+    },
+
+    "OpenAlex": {
+      "URL": "https://api.openalex.org/works",
+      "download_folder":"C:\\Users\\vu-hong\\Desktop\\ILL_corpus\\validation-flora\\backend\\fetchers\\Data",
+      "ROR": "https://ror.org/01xtjs520",
+      "INSTITUTION_ID": "i4210113448",
+      "PUBLICATION_YEAR": 2015,
+      "PER_PAGE": 100, 
+      "query": "Laue Langevin"
+    },
+
+    "HAL": {
+      "URL":"https://api.archives-ouvertes.fr/search",
+      "download_folder":"C:\\Users\\vu-hong\\Desktop\\ILL_corpus\\validation-flora\\backend\\fetchers\\Data",
+      "structId_i":2569,
+      "PUBLICATION_YEAR": 2015,
+      "row": 1000,
+      "write_type": "json",
+      "sort": "docid asc",
+      "query": "(\"Laue Langevin\" AND docType_s:THESE)"
+    },
+
+    "WoS":{
+      "URL": "https://www.webofscience.com/wos/woscc/advanced-search",
+      "download_folder":"C:\\Users\\vu-hong\\Desktop\\ILL_corpus\\validation-flora\\backend\\fetchers\\Data",
+      "ROR": "https://ror.org/01xtjs520",
+      "PUBLICATION_YEAR": 2015,
+      "query": "Institut Laue Langevin"
+    }
+  }
